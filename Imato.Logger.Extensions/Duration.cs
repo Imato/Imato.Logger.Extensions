@@ -13,7 +13,7 @@ namespace Imato.Logger.Extensions
         /// <param name="logger"></param>
         /// <param name="task"></param>
         /// <param name="taskName">Log message</param>
-        /// <param name="maxDuration"></param>
+        /// <param name="maxDuration">Create warning after</param>
         /// <returns></returns>
         public static async Task<T> LogDuration<T>(this ILogger logger,
             Func<Task<T>> task,
@@ -41,7 +41,7 @@ namespace Imato.Logger.Extensions
         /// <param name="logger"></param>
         /// <param name="task"></param>
         /// <param name="taskName">Log message</param>
-        /// <param name="maxDuration"></param>
+        /// <param name="maxDuration">Create warning after</param>
         /// <returns></returns>
         public static async Task LogDuration(this ILogger logger,
             Func<Task> task,
