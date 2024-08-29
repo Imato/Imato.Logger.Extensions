@@ -47,7 +47,7 @@ namespace Imato.Logger.Extensions
             {
                 return obj.ToString();
             }
-            return Serialize(obj);
+            return JsonSerializer.Serialize(obj, JSON_OPTIONS);
         }
     }
 }
